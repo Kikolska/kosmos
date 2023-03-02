@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styles5.css">
+<title>Our space! </title>
+<script src="jquery-3.6.1.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/dan-wiersma/solar-system/512/Jupiter-icon.png">
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script> 
+</head>
+<body>
+<section class="topsec">
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="regpage.html">Register</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+            <li><a href="home.html">Home</a></li>
+          </ul>
+        </nav> 
+      </div>
+</section>
+<input type="button">
+
+   <div class="tittle">
+        Feel free to text me!
+   </div>
+</section>
+<section class="thirdsec">
+    <div class="container">
+        <form action="home.html">
+      
+          <label for="name">Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="email">E-mail</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          
+          <p> Date: <input id="datepicker"></p>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+</section>
+
+
+</body>
+</html>

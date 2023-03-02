@@ -1,0 +1,26 @@
+.row{
+    flex-direction: row;
+}
+
+.fullwidth {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.topsec{
+    background-color: rgb(54, 51, 51);
+    min-height: 10vh;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+    flex-direction: row;
+}

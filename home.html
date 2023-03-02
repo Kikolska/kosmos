@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Our space! </title>
+<link rel="stylesheet" href="styles3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" type="image/png" href="https://icons.iconarchive.com/icons/dan-wiersma/solar-system/512/Jupiter-icon.png">
+<script src="script.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <script>
+    $(document).ready(function() {
+  clockUpdate();
+  setInterval(clockUpdate, 1000);
+})
+
+function clockUpdate() {
+  var date = new Date();
+  $('.digital-clock').css({'color': '#fff', 'text-shadow': '0 0 6px #ff0'});
+  function addZero(x) {
+    if (x < 10) {
+      return x = '0' + x;
+    } else {
+      return x;
+    }
+  }
+
+  function twelveHour(x) {
+    if (x > 12) {
+      return x = x - 12;
+    } else if (x == 0) {
+      return x = 12;
+    } else {
+      return x;
+    }
+  }
+
+  var h = addZero(twelveHour(date.getHours()));
+  var m = addZero(date.getMinutes());
+  var s = addZero(date.getSeconds());
+
+  $('.digital-clock').text(h + ':' + m + ':' + s)
+}
+  </script>
+
+</head>
+<body>
+
+<section id="topsection">
+    <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="regpage.html">Register</a></li>
+            <li><a href="loginpage.html">Login</a></li>
+          </ul>
+        </nav> 
+      </div>
+
+</section>
+
+<section class="time">
+    <div class="digital-clock">00:00:00</div>
+</section>
+
+<section type="secsec">
+    <div class="fullwidth">
+        <div class="whitetheme darktheme">
+            <div class="flex">
+                <div class="tittle">
+                    Welcome to "My space"!
+                </div>
+                <div class="description">
+                    Mine personal <del>galactic</del> super galactic page, where you can find everything for yourself, enjoy.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</section>
+<section id="thirsec">
+    <div class="fullwidth">
+        <div class="whitetheme">
+            <div class="flex">
+                <div class="tittle">
+                    What special do mine page have?
+                </div>
+                <div class="description">
+                    You can <u>learn and expire new things</u>. I'm sure, you will find something for you.
+                    I'm into astronomy since I was kid. Back in the day my parents loved watching stars and moon,
+                    so I started to develop my passion from the youngest year. I'm glad that I can show you some of my few
+                    education tricks.
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section class="fourthsec">
+    <div class="fullwidth">
+        <div class="whitetheme darktheme">
+            <div class="flex">
+                <div class="tittle">
+                    Whats is included in my site?
+                </div>
+                <div class="description">
+                    You can find a lot of fun stuff, like:
+                    <br>
+                    <a href="solarsystem.html"> Solar system in a nutshell</a>
+                    <br>
+                    <a href="fpof.html">National favourite planet day</a>
+                    <br>
+                    <a href="galactuc.html">Other galactics</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section id="fifththsec">
+    <div class="fullwidth">
+        <div class="whitetheme ">
+            <div class="flex">
+                <div class="firstslide">
+                    <div class="tittle">
+                        Is there anything special?
+                    </div>
+                    <div class="description1">
+                        Of course, in future I will make an internet shop, where you can buy my book - awesome!
+                        And for more content you can visit my youtube channel, you wont be disappointed. 
+                        <a href="contact.html"> If you want to contact with me, visit this page.</a>
+                        
+                    </div>
+                </div>
+               <div class="secondslide">
+                <div class="imgslide">
+                    <img class="img1" src="https://ecsmedia.pl/c/bogaty-ojciec-biedny-ojciec-b-iext120585942.jpg" width="300vh" height="400vh"></url>
+                    
+                    <img clas="img1"src="https://mediapool.bmwgroup.com/cache/P9/202012/P90410960/P90410960-bmw-wins-the-golden-button-award-on-youtube-12-2020-1296px.jpg" width="300vh" height="400vh">
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+</html>
